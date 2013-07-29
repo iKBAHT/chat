@@ -9,7 +9,6 @@ chat.directive('ngEnter', function () {
 	var ESCAPE_KEY = 13;
 	return function (scope, elem, attrs) {
 		elem.bind('keydown', function (event) {
-			debugger;
 			if (event.keyCode === ESCAPE_KEY) {
 				scope.$apply(attrs.ngEnter);
 			}
